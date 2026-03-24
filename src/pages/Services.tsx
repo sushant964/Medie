@@ -54,6 +54,30 @@ export const Services: React.FC = () => {
                     </li>
                   ))}
                 </ul>
+
+                {/* Service Gallery */}
+                {service.gallery && service.gallery.length > 0 && (
+                  <div className="pt-4">
+                    <p className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-4">Service Gallery</p>
+                    <div className="grid grid-cols-2 gap-4">
+                      {service.gallery.map((img, i) => (
+                        <motion.div
+                          key={i}
+                          whileHover={{ scale: 1.05 }}
+                          className="aspect-square rounded-2xl overflow-hidden shadow-sm"
+                        >
+                          <img
+                            src={img}
+                            alt={`${service.title} gallery ${i + 1}`}
+                            className="w-full h-full object-cover"
+                            referrerPolicy="no-referrer"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
                 <div className="pt-6">
                   <Link
                     to="/contact"

@@ -3,6 +3,7 @@ export interface Service {
   title: string;
   description: string;
   image: string;
+  gallery?: string[];
 }
 
 export interface Project {
@@ -76,25 +77,50 @@ export const initialContent: SiteContent = {
       id: "1",
       title: "Garden Maintenance",
       description: "Regular upkeep, pruning, and cleaning to keep your garden thriving all year round.",
-      image: "https://images.unsplash.com/photo-1592419044706-39796d40f98c?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1592419044706-39796d40f98c?q=80&w=800&auto=format&fit=crop",
+      gallery: [
+        "https://images.unsplash.com/photo-1557429287-b2e26467fc2b?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=800&auto=format&fit=crop"
+      ]
     },
     {
       id: "2",
       title: "Landscape Design",
       description: "Custom outdoor space design tailored to your lifestyle and aesthetic preferences.",
-      image: "https://images.unsplash.com/photo-1558904541-efa8c1965f1e?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1558904541-efa8c1965f1e?q=80&w=800&auto=format&fit=crop",
+      gallery: [
+        "https://images.unsplash.com/photo-1590059132718-502194895944?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1584479898061-15742e14f50d?q=80&w=800&auto=format&fit=crop"
+      ]
     },
     {
       id: "3",
       title: "Lawn Care",
       description: "Expert mowing, fertilizing, and restoration services for a perfectly lush green lawn.",
-      image: "https://images.unsplash.com/photo-1533460004989-cef01064af7c?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1533460004989-cef01064af7c?q=80&w=800&auto=format&fit=crop",
+      gallery: [
+        "https://images.unsplash.com/photo-1592419044706-39796d40f98c?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1557429287-b2e26467fc2b?q=80&w=800&auto=format&fit=crop"
+      ]
     },
     {
       id: "4",
       title: "Planting & Installation",
       description: "Careful selection and installation of flowers, shrubs, and trees for your unique climate.",
-      image: "https://images.unsplash.com/photo-1416870262648-255f02fedc80?q=80&w=800&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1416870262648-255f02fedc80?q=80&w=800&auto=format&fit=crop",
+      gallery: [
+        "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=800&auto=format&fit=crop"
+      ]
+    },
+    {
+      id: "5",
+      title: "Garden Cleanups",
+      description: "Seasonal or one-time cleaning to restore your garden's beauty and health.",
+      image: "https://images.unsplash.com/photo-1598902108854-10e335adac99?q=80&w=800&auto=format&fit=crop",
+      gallery: [
+        "https://images.unsplash.com/photo-1592419044706-39796d40f98c?q=80&w=800&auto=format&fit=crop"
+      ]
     }
   ],
   projects: [
